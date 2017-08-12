@@ -1,0 +1,10 @@
+c:\users\user\documents\visual studio 2017\Projects\Chat\Chat\bin\Debug\Chat.exe.config
+c:\users\user\documents\visual studio 2017\Projects\Chat\Chat\bin\Debug\Chat.exe
+c:\users\user\documents\visual studio 2017\Projects\Chat\Chat\bin\Debug\Chat.pdb
+c:\users\user\documents\visual studio 2017\Projects\Chat\Chat\obj\Debug\Chat.csprojResolveAssemblyReference.cache
+c:\users\user\documents\visual studio 2017\Projects\Chat\Chat\obj\Debug\Chat.Form1.resources
+c:\users\user\documents\visual studio 2017\Projects\Chat\Chat\obj\Debug\Chat.Properties.Resources.resources
+c:\users\user\documents\visual studio 2017\Projects\Chat\Chat\obj\Debug\Chat.csproj.GenerateResource.Cache
+c:\users\user\documents\visual studio 2017\Projects\Chat\Chat\obj\Debug\Chat.exe
+c:\users\user\documents\visual studio 2017\Projects\Chat\Chat\obj\Debug\Chat.pdb
+C:\Users\user\documents\visual studio 2017\Projects\Chat\Chat\obj\Debug\Chat.Form2.resources

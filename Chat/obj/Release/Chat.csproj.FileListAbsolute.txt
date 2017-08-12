@@ -1,0 +1,13 @@
+C:\Users\user\documents\visual studio 2017\Projects\Chat\Chat\obj\Release\Chat.Form1.resources
+C:\Users\user\documents\visual studio 2017\Projects\Chat\Chat\obj\Release\Chat.Form2.resources
+C:\Users\user\documents\visual studio 2017\Projects\Chat\Chat\obj\Release\Chat.Properties.Resources.resources
+C:\Users\user\documents\visual studio 2017\Projects\Chat\Chat\obj\Release\Chat.csproj.GenerateResource.Cache
+C:\Users\user\documents\visual studio 2017\Projects\Chat\Chat\obj\Release\Chat.csprojResolveAssemblyReference.cache
+C:\Users\user\documents\visual studio 2017\Projects\Chat\Chat\bin\Release\MySql.Data.dll
+C:\Users\user\documents\visual studio 2017\Projects\Chat\Chat\bin\Release\MySql.Data.xml
+C:\Users\user\documents\visual studio 2017\Projects\Chat\Chat\obj\Release\Chat.Form3.resources
+C:\Users\user\documents\visual studio 2017\Projects\Chat\Chat\bin\Release\Triumph.exe.config
+C:\Users\user\documents\visual studio 2017\Projects\Chat\Chat\bin\Release\Triumph.exe
+C:\Users\user\documents\visual studio 2017\Projects\Chat\Chat\bin\Release\Triumph.pdb
+C:\Users\user\documents\visual studio 2017\Projects\Chat\Chat\obj\Release\Triumph.exe
+C:\Users\user\documents\visual studio 2017\Projects\Chat\Chat\obj\Release\Triumph.pdb
