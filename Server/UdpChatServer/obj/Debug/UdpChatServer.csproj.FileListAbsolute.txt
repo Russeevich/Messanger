@@ -1,0 +1,8 @@
+c:\users\user\documents\visual studio 2017\Projects\UdpChatServer\UdpChatServer\bin\Debug\UdpChatServer.exe.config
+c:\users\user\documents\visual studio 2017\Projects\UdpChatServer\UdpChatServer\bin\Debug\UdpChatServer.exe
+c:\users\user\documents\visual studio 2017\Projects\UdpChatServer\UdpChatServer\bin\Debug\UdpChatServer.pdb
+c:\users\user\documents\visual studio 2017\Projects\UdpChatServer\UdpChatServer\obj\Debug\UdpChatServer.csprojResolveAssemblyReference.cache
+c:\users\user\documents\visual studio 2017\Projects\UdpChatServer\UdpChatServer\obj\Debug\UdpChatServer.exe
+c:\users\user\documents\visual studio 2017\Projects\UdpChatServer\UdpChatServer\obj\Debug\UdpChatServer.pdb
+C:\Users\user\Documents\Visual Studio 2017\Projects\UdpChatServer\UdpChatServer\bin\Debug\MySql.Data.dll
+C:\Users\user\Documents\Visual Studio 2017\Projects\UdpChatServer\UdpChatServer\bin\Debug\MySql.Data.xml
