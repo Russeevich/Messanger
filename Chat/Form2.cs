@@ -76,7 +76,7 @@ namespace Chat
             {
 
             }
-            string sss = "UPDATE chat SET Ip ='" + IP + "' WHERE Login='" + textBox1.Text + "'";
+            string sss = String.Format("UPDATE chat SET Ip ='{0}',Online='true' WHERE Login='{1}'",IP, textBox1.Text);
             MySqlCommand cmd = new MySqlCommand(sss, connection2);
             cmd.Connection.Open();
             cmd.ExecuteNonQuery();

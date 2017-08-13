@@ -16,6 +16,7 @@ namespace Chat
 {
     public partial class Form1 : Form
     {
+        private string fromname = null;
         string localname = null;
         TcpClient tcp = new TcpClient();
         private static IPAddress remoteIPAddress = IPAddress.Parse("79.174.44.240");
@@ -50,12 +51,12 @@ namespace Chat
         private void pictureBox4_Click(object sender, EventArgs e)
         {
             int x=60, y=90;
-            string name = null;
+            string online,name = null;
             MySqlCommand command = new MySqlCommand(); ;
             string connectionString, commandString;
             connectionString = "Data source=79.174.44.240;UserId=triu;Password=120evazus;database=triumph;";
             MySqlConnection connection = new MySqlConnection(connectionString);
-            commandString = "SELECT Nickname FROM chat;";
+            commandString = String.Format("SELECT Nickname,Online FROM chat WHERE Login!='{0}';",localname);
             command.CommandText = commandString;
             command.Connection = connection;
             MySqlDataReader reader;
@@ -63,18 +64,36 @@ namespace Chat
                 reader = command.ExecuteReader();
                 while (reader.Read())
                 {
+                online = reader["Online"].ToString();
                     name = reader["Nickname"].ToString();
-                    Label label = new Label();
-                    label.Location = new Point(x, y);
-                    label.BackColor = Color.FromArgb(0,0,0,0);
-                    label.Font = new System.Drawing.Font("Segoe print", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-                    label.ForeColor = Color.FromArgb(255,255,255);
-                    y += 50;
-                    label.Text = name;
-                    this.Controls.Add(label);
+                        Label label = new Label();
+                if (online == "true")
+                {
+                    PictureBox picture = new PictureBox();
+                    picture.BackgroundImage = Chat.Properties.Resources.online;
+                    picture.Location = new Point(x + 100, y + 10);
+                    picture.Size = new Size(7, 7);
+                    picture.BackColor = Color.FromArgb(0, 0, 0, 0);
+                    this.Controls.Add(picture);
+                }
+                        label.Location = new Point(x, y);
+                        label.BackColor = Color.FromArgb(0, 0, 0, 0);
+                        label.Font = new System.Drawing.Font("Segoe print", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+                        label.ForeColor = Color.FromArgb(255, 255, 255);
+                        y += 50;
+                        label.Text = name;
+                        label.MouseClick += cl;
+                        this.Controls.Add(label);
                 }
                 reader.Close();
             command.Connection.Close();
+        }
+
+        private void cl(object sender, EventArgs e)
+        {
+            string s = sender.ToString();
+            string a = s.Remove(0, s.IndexOf(':')+2);
+            fromname = a;
         }
 
         private void pictureBox3_MouseEnter(object sender, EventArgs e)
@@ -104,6 +123,7 @@ namespace Chat
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
+            tcp.Close();
             Application.Exit();
         }
 
@@ -176,9 +196,9 @@ namespace Chat
 
         private void pictureBox6_Click(object sender, EventArgs e)
         {
-            Form2 fm = new Form2();
-            string Message = localname+":"+textBox1.Text;
+            string Message = string.Format("/send from {0} to {1} :{2}", localname, fromname, textBox1.Text);
             Send(Message);
+            textBox2.Text += localname + ":" + textBox1.Text + Environment.NewLine;
             textBox1.Text = null;
         }
 

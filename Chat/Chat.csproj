@@ -32,6 +32,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup />
+  <PropertyGroup>
+    <ApplicationIcon>ws.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="MySql.Data, Version=6.9.9.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
     <Reference Include="System" />
@@ -158,6 +161,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\online.png" />
+    <None Include="Resources\online1.png" />
+    <Content Include="Resources\Онлайн.png" />
+    <Content Include="ws.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

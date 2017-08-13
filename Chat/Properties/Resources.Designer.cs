@@ -93,6 +93,16 @@ namespace Chat.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap online {
+            get {
+                object obj = ResourceManager.GetObject("online", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Диалоги {
             get {
                 object obj = ResourceManager.GetObject("Диалоги", resourceCulture);
@@ -186,6 +196,16 @@ namespace Chat.Properties {
         internal static System.Drawing.Bitmap Новости {
             get {
                 object obj = ResourceManager.GetObject("Новости", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Онлайн {
+            get {
+                object obj = ResourceManager.GetObject("Онлайн", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
